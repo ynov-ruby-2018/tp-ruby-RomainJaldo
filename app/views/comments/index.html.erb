@@ -1,0 +1,17 @@
+<%= "Hello #{current_user.email} " %>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>Thanks to add your comment</h1>
+  </div>
+</div>
+
+<%= form_tag comments_path, method: :post do %>
+  <%= text_area_tag 'comment', nil %>
+  <%= submit_tag 'Save' %>
+<% end %>
+
+<ul>
+  <%= @comments.each do |comment| %>
+  <li><%= comment.content %></li>
+</ul>
+  <% end %>
