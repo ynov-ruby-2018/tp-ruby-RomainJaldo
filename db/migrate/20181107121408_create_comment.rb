@@ -5,7 +5,9 @@ class CreateComment < ActiveRecord::Migration[5.2]
       t.text :content
       t.integer :dislike
       t.integer :like
-      t.integer :user_id
+      t.integer :user_id 
+      
+      # Bien !
     end
   end
 end
