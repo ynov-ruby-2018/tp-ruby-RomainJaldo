@@ -9,7 +9,8 @@ class CommentsController < ApplicationController
     Comment.create!(
       content: params[:comment]
     )
-
+    # Humhum... c'est au moins la 3eme fois que je vois ce code :-/
+    
     redirect_to comments_index_path
   end
 
