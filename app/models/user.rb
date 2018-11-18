@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 
- belongs_to :comment
-  has_many :comments
+ belongs_to :comment # Aille, aucun sens :-/
+  has_many :comments # Celui là est bon
 
 end
