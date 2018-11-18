@@ -13,5 +13,7 @@ class CommentsController < ApplicationController
     
     redirect_to comments_index_path
   end
+  
+  # Il manque des features !
 
 end
