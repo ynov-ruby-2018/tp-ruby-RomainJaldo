@@ -6,7 +6,7 @@
 </div>
 
 <%= form_tag comments_path, method: :post do %>
-  <%= text_area_tag 'comment', nil %>
+  <%= text_area_tag 'comment', nil %> <!-- Manque la colonne, comme ça: comment[content]
   <%= submit_tag 'Save' %>
 <% end %>
 
@@ -14,4 +14,4 @@
   <%= @comments.each do |comment| %>
   <li><%= comment.content %></li>
 </ul>
-  <% end %>
+  <% end %> <!-- Le </ul> est inclu dans la boucle. Erreur d'inatention mais globalement attention à la mise en forme -->
