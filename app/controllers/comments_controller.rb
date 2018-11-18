@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
-
+  # Pas besoin de s'authentifier ? (authenticate_user!)
+  
   def index
     @comments = Comment.all.order('created_at DESC')
 
